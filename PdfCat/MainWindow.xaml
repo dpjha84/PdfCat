@@ -1,0 +1,29 @@
+﻿<Window x:Class="PdfCat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PdfCat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="5" Grid.Row="0">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Name="btnOpenFile" Click="btnOpenFiles_Click">Open files</Button>
+                <TextBox x:Name="textBox" IsReadOnly="True" Width="400" Margin="10,0,0,0" />
+            </StackPanel>
+        </StackPanel>
+        <Border Margin="5" BorderBrush="DarkGray" BorderThickness="2" Grid.Row="1">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel Name="sp">
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+
+</Window>
