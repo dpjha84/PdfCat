@@ -1,2 +1,2 @@
 # PdfCat
-A WPF application to explore PDF files
+A WPF application to view and explore PDF files. This application uses PdfiumSharp library for pdf content rendering.
